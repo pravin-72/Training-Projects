@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Values</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div>
+                    <img src="../Assets/Group 3.svg" alt="error">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="first-banner">
+        <div class="container">
+            <div class="first-wrapper">
+                    <div>
+                        <!-- <h1>Prompt Addition</h1> <br>
+                        <h4>Two Numbers</h4> <br>
+                        <label for="">Enter Number 1: </label>
+                        <button onclick="first()">Click Here</button>
+                        <label for="">Enter Number 2: </label>
+                        <button onclick="second()">Click Here</button>
+                        <button id="output" onclick="result()">Submit</button> -->
+                        <h1>Addition</h1> <br>
+                       <h4>Add Two Numbers</h4> <br>
+                       <label for="">You have Entered this Number 1 : </label>
+                       <span id="first"></span> <br>
+                       <label for="">You have Entered this Number 2 : </label>
+                       <span id="second"></span>
+                        <h3 id="result"></h3>
+                       
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // function first(){
+        //     let a=prompt("Enter your number");
+           
+
+        // }
+        // function second(){
+        //     let b=prompt("Enter your number");
+        // }
+        // function result(){
+             
+        //     let c= Number(a)+Number(b);
+        //     let data= document.getElementById("result");
+        //     data.innerHTML= "The addition values :" + c;
+        // }
+        
+        let a= prompt("Enter First Number");
+        let e=document.getElementById("first");
+        e.innerHTML=a;
+        let b= prompt("Enter Second Number");
+        let f= document.getElementById("second");
+        f.innerHTML=b;
+        let c= Number(a)+ Number(b);
+       let d= document.getElementById("result");
+       d.innerHTML="The addition of Two numbers : "+ c;
+    </script>
+</body>
+</html>

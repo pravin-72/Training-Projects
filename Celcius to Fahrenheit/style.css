@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+
+    background-image: url(../Assets/blue-250770_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.header-wrapper>div img{
+    width: 5%;
+    height: 5%;
+    padding: 1%;
+}
+.first-banner{
+    
+    margin: 100px 570px;
+    background-color: blue;
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.first-wrapper>div h1{
+    font-size: 35px;
+    
+}
+.first-wrapper>div h4{
+    font-size: 25px;
+}
+.first-wrapper>div input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.first-wrapper>div button{
+    margin: 20% 10% 5% 10% ;
+    padding: 5% 8% 5% 8%;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    font-size: large;
+}
+
+
+

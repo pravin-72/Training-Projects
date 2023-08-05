@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+    <div class="first-banner">
+        <div class="container">
+            <div class="first-wrapper">
+
+                <label for="">Search your name :</label>
+                <input type="text" id="datas">
+                <button type="submit" onclick="pravin()">Submit</button>
+                <h1 id="getvalue"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CALCULTOR</title>
+</head>
+<body>
+<label>Name</label>
+<input type="text" name="name" id="name" placeholder="input goes here">
+	<button onclick="validate()">
+		press to validate
+	</button>
+		
+<h1 id='res'></h1>
+<script type="text/javascript">
+	let names=prompt("enter the names");
+	let name=names.split(",");
+            function validate(){
+        	let a=document.getElementById('name').value;
+             let res=document.getElementById('res');
+        let f=0;
+          for(let i=0;i<name.length;i++)
+ {
+ 	if(a===name[i])
+ 	{
+       f=1;break;
+ 	}
+ }             
+if(f==1)  
+  res.innerHTML="FOUND YOU "+a
+else 
+{
+	res.innerHTML="not FOUND"
+	alert("WHO ARE YOU MAN")
+}
+        }
+	</script>
+</body>
+</html>
+

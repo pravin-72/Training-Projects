@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CALCULTOR</title>
+</head>
+<body>
+<label>Name</label> <br> <br>
+<input type="text" name="name" id="name" placeholder="input goes here">
+
+
+<h2 id='res'></h2>
+<!-- Second element -->     
+
+<label>Number</label> <br> <br>
+<input type="text" name="name" id="number" placeholder="input goes here">  <br>  <br>
+	<button onclick="validate()">
+	Click Here
+	</button>
+		
+<h2 id='result'></h2>
+<script type="text/javascript">
+	let names=prompt("enter the names");
+    let numbers= prompt("Enter your number");
+	let name=names.split(",");
+    let number= numbers.split(",");
+            function validate(){
+        	let a=document.getElementById('name').value;
+            let b=document.getElementById('number').value;
+             let res=document.getElementById('res');
+             let result= document.getElementById('result');
+           let f=0;
+          for(let i=0,j=0;i<name.length,j<numbers.length;i++,j++)
+ {
+ 	if(a===name[i] && b===number[j])
+ 	{
+       f=1;
+       break;
+ 	}
+ }             
+if(f==1)  
+{ 
+    res.innerHTML="Valid Value "+a;
+    result.innerHTML="Valid Value "+b;
+
+}
+ 
+else 
+{
+	res.innerHTML="Invalid"
+    result.innerHTML="Invalid"
+    alert("Not existed");
+
+}
+} 
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Celcius To Farenheit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div>
+                    <img src="../Assets/Group 3.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="first-banner">
+        <div class="container">
+            <div class="first-wrapper">
+                <div>
+                    <h1>Conversion</h1> <br>
+                    <h4>Celsius to Fahrenheit</h4> <br>
+                    <input type="number" id="data" placeholder="  Enter any number"> <br>
+                    <button onclick="ctof()">Convert</button>
+                    <h4 id="data1"></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function ctof() {
+            let values = document.getElementById("data").value;
+            let store = (values * (9 / 5) + 32).toFixed(3);
+            let datas = document.getElementById("data1");
+            datas.innerHTML = "Your answer is : " +  store;
+        }
+    </script>
+</body>
+
+</html>
